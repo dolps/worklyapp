@@ -14,41 +14,52 @@
 
 
 <ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-item>
-          <ion-label>Code</ion-label>
-          <ion-select [(ngModel)]="workCode">
-            <ion-option value="vizier">Vizier</ion-option>
-            <ion-option value="other">Other</ion-option>
-          </ion-select>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-label>Date</ion-label>
-          <ion-select [(ngModel)]="day">
-            <ion-option value="1">1</ion-option>
-            <ion-option value="2">2</ion-option>
-          </ion-select>
-          <ion-select [(ngModel)]="month">
-            <ion-option value="1">jan</ion-option>
-            <ion-option value="2">feb</ion-option>
-          </ion-select>
-          <ion-select [(ngModel)]="year">
-            <ion-option value="2017">2017</ion-option>
-            <ion-option value="2018">2018</ion-option>
-          </ion-select>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          number of hours
-        </ion-item>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-list>
+    <ion-item>
+      <ion-label>Code</ion-label>
+      <ion-select [(ngModel)]="workCode">
+        <ion-option value="vizier">Vizier</ion-option>
+        <ion-option value="other">Other</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="dateWorked"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hours worked</ion-label>
+      <ion-select [(ngModel)]="day">
+        <ion-option value="1">1</ion-option>
+        <ion-option value="2">2</ion-option>
+        <ion-option value="3">3</ion-option>
+        <ion-option value="4">4</ion-option>
+        <ion-option value="5">5</ion-option>
+        <ion-option value="6">6</ion-option>
+        <ion-option value="7">7</ion-option>
+        <ion-option value="8">8</ion-option>
+        <ion-option value="9">9</ion-option>
+        <ion-option value="10">10</ion-option>
+        <ion-option value="11">11</ion-option>
+        <ion-option value="12">12</ion-option>
+        <ion-option value="13">13</ion-option>
+        <ion-option value="14">14</ion-option>
+        <ion-option value="15">15</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab center bottom>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side=top>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side=left>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side=right>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 
   <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
