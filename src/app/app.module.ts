@@ -11,6 +11,7 @@ import {WorkweekPage} from '../pages/workweek/workweek';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LoginPage } from "../pages/login/login";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    WorkweekPage
+    WorkweekPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    WorkweekPage
+    WorkweekPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

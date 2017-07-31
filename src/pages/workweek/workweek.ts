@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AboutPage } from "../about/about";
 
 /**
  * Generated class for the WorkweekPage page.
@@ -20,6 +21,12 @@ export class WorkweekPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WorkweekPage');
+  }
+  addWork(): void {
+    console.log("calling addwork");
+  }
+  open() {
+    this.navCtrl.push(AboutPage);
   }
 
 }

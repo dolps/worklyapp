@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { NgModule, Component } from '@angular/core';
+import { IonicPageModule, NavController } from 'ionic-angular';
 import { WorkweekPage } from './workweek';
 
 @NgModule({
@@ -10,4 +10,5 @@ import { WorkweekPage } from './workweek';
     IonicPageModule.forChild(WorkweekPage),
   ],
 })
+
 export class WorkweekPageModule {}

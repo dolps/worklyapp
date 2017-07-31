@@ -11,4 +11,8 @@ export class AboutPage {
 
   }
 
+  popStack(){
+    this.navCtrl.pop();
+  }
+
 }
