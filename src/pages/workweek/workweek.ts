@@ -9,7 +9,6 @@ import { AboutPage } from "../about/about";
  * on Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-workweek',
   templateUrl: 'workweek.html',
